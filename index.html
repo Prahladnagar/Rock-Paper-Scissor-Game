@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="title">
+      Rock Paper Scissor
+    </header>
+
+    <nav class="nav">
+      <div class="cscore">COMPUTER SCORE:</div>
+      <div class="match-round">MATCH ROUND:</div>
+      <div class="pscore">PLAYER SCORE:</div>
+    </nav>
+
+    <div class="decision-panel">
+      <div class="decision">
+        <div class="panel ppanel"></div>
+        <div class="player">PLAYER</div>
+      </div>
+
+      <div>
+        <div class="vs"></div>
+      </div>
+
+      <div class="decision">
+        <div class="panel cpanel"></div>
+        <div class="computer">COMPUTER</div>
+      </div>
+    </div>
+
+    <div class="result">Choose a option</div>
+
+    <div class="choice-window">
+      <div class="icon" onclick="start('stone')">
+        <div class="image1 image"></div>
+        <div class="div-title">ROCK</div>
+      </div>
+
+      <div class="icon" onclick="start('paper')">
+        <div class="image2 image"></div>
+        <div class="div-title">PAPER</div>
+      </div>
+
+      <div class="icon" onclick="start('scissor')">
+        <div class="image3 image"></div>
+        <div class="div-title">SCISSOR</div>
+      </div>
+    </div>
+    <div class="popup-container">
+      <div class="popup">
+        <div class="popup-image"></div>
+        <span class="popup-text">You are the winner</span>
+        <button class="ok" onclick="closepopup()">Ok</button>
+      </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

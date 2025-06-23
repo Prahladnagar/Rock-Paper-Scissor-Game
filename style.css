@@ -1,0 +1,123 @@
+body {
+  background-color: beige;
+  font-family: system-ui;
+  font-size: clamp(3vw, 15px, 8vw);
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+.title {
+  text-align: center;
+  font-size: clamp(5vw, 25px, 13vw);
+}
+.decision-panel {
+  height: max(30vw, 125px);
+  display: flex;
+  justify-content: space-around;
+}
+
+.decision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vs {
+  width: 10vw;
+  height: min(35vw, 100px);
+  background-image: url("vs3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10vw;
+}
+
+.panel {
+  margin-top: 2vw;
+  background-image: url(q2.png.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: max(20vw, 100px);
+  width: max(20vw, 100px);
+}
+
+.result {
+  text-align: center;
+}
+
+.choice-window {
+  width: 100vw;
+  height: max(30vw, 125px);
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+.icon {
+  width: max(25vw, 100px);
+  height: max(28vw, 125px);
+  display: flex;
+  padding-top: 5vh;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  height: max(18vw, 100px);
+  width: max(18vw, 100px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 2vh;
+}
+.image1 {
+  background-image: url("r.png");
+}
+.image2 {
+  background-image: url("p.png");
+}
+.image3 {
+  background-image: url("s3.png");
+}
+.popup-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(150, 181, 185, 0.308);
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.popup {
+  height: 400px;
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  background-color: transparent;
+  transform: scale(0.05);
+  visibility: hidden;
+  box-shadow: 5px 5px 5px;
+}
+
+.popup-image {
+  height: 100px;
+  width: 100px;
+  background-image: url("winner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ok {
+  width: 250px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-size: 25px;
+  background-color:rgba(185, 170, 150, 0.753);
+  box-shadow: 2px 2px 2px;
+}
