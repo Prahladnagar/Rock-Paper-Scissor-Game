@@ -30,7 +30,7 @@ function start(choice) {
       result("lose");
     }
   } else if (choice === "paper") {
-    insertimage("P.png");
+    insertimage("p.png");
     if (cchoice == "stone") {
       insertimageforbot("r.png");
       result("won");
